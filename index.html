@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4_1</title>
+    <style>
+        div {
+            background-color: rgba(0, 89, 255, 0.425);
+            width: max-content;
+            height: 250px;
+            padding: 20px;
+            border: 4px rgba(0, 89, 255, 0.5) solid;
+            border-radius: 20px;
+            margin: 20px auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Task 4_1 -->
+    <div>
+        <h1>User Info</h1>
+        <script>
+            // Start Partechen One (a)
+            var numbers = [];
+            for( var i = 0; i < 10; i++) {
+                numbers.push(Math.floor(Math.random() * 10));
+            }
+            var evenSum = 0;
+            for( var i = 0; i < numbers.length; i++) {
+                if (numbers[i] % 2 === 0) {
+                    evenSum += numbers[i];
+                }
+            }
+            var lessThanFiveSum = 0;
+            for (var j = 0; j < numbers.length; j++) {
+                if (j < 5) {
+                    lessThanFiveSum += numbers[j];
+                }
+            }
+            console.log(numbers);
+            console.log(evenSum);
+            console.log(lessThanFiveSum);
+            // End Partechen One (a)
+            // ------------------------------------------------
+            // Start Partechen One (b)
+            var user = {
+                name: "Moamen Mohamad",
+                phone: "00963 981 289 080",
+                age: 25,
+                email: "Moamen.Mohamad.ln@gmail.com"
+                
+            };
+            // Print all Objecr
+            var values = Object.values(user);
+            for (var k = 0; k < values.length; k++) {
+                document.write( values[k] + '<br>' );
+            }
+            // Print Elemants Of Object
+            document.write('<br>'+ "Name: " + user.name);
+            document.write('<br>'+ "Phone: " + user.phone);
+            document.write('<br>'+ "Age: " + user.age);
+            document.write('<br>'+ "Email: " + user.email);
+            // End Partechen One (b)
+        </script>
+    </div>
+</body>
+</html>
